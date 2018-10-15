@@ -772,10 +772,10 @@ export default class Plx extends Component {
       const { style: { backgroundImage } } = this.props;
       const { plxStyle: { transform, opacity } } = newState;
 
-      this.element.style = `
-        background-image: ${backgroundImage};
-        transform: ${transform};
-        opacity: ${opacity}
+      this.element.style.cssText = `
+        background-image: ${ backgroundImage };
+        transform: ${ transform };
+        opacity: ${ opacity }
       `;
     }
   }
